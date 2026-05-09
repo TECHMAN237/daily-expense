@@ -1,0 +1,143 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+}
+
+.app-container {
+    max-width: 800px;
+    margin: 0 auto;
+    background: #ffffff;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10px;
+}
+
+header h1 {
+    margin: 0 0 5px 0;
+}
+
+header p {
+    margin: 0;
+    color: #666;
+}
+
+.summary-cards {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.card {
+    flex: 1;
+    background: #eef2f5;
+    padding: 15px;
+    border: 1px solid #d1d5db;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.card p {
+    margin: 0 0 10px 0;
+    font-weight: bold;
+    color: #555;
+}
+
+.card h2 {
+    margin: 0;
+    color: #222;
+}
+
+.main-content {
+    display: flex;
+    gap: 30px;
+}
+
+.add-expense-section, .recent-expenses-section {
+    flex: 1;
+}
+
+h3 {
+    border-bottom: 1px solid #eee;
+    padding-bottom: 5px;
+    margin-top: 0;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input, select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.btn-submit {
+    width: 100%;
+    padding: 10px;
+    background-color: #0056b3;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.btn-submit:hover {
+    background-color: #004494;
+}
+
+.expense-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.expense-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.expense-info strong {
+    display: block;
+}
+
+.expense-info p {
+    margin: 5px 0 0 0;
+    font-size: 12px;
+    color: #777;
+}
+
+.expense-amount {
+    font-weight: bold;
+    color: #d9534f;
+}
+
+@media (max-width: 600px) {
+    .summary-cards, .main-content {
+        flex-direction: column;
+    }
+}
